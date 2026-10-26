@@ -1,0 +1,14 @@
+# Copy this file to ~/.dbt/profiles.yml -- never commit your real
+# profiles.yml, it can hold credentials.
+indrive_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: indrive
+      password: indrive
+      dbname: indrive_warehouse
+      schema: dbt_dev
+      threads: 4

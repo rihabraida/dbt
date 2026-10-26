@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: raw_drivers
+      - name: raw_vehicles
+      - name: raw_zones
+      - name: raw_ride_events
+        config:
+          loaded_at_field: requested_at
+          freshness:
+            warn_after: {count: 24, period: hour}
+            error_after: {count: 48, period: hour}

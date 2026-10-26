@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_drivers
+    columns:
+      - name: driver_id
+        data_tests: [unique, not_null]
+
+  - name: stg_vehicles
+    columns:
+      - name: vehicle_id
+        data_tests: [unique, not_null]
+
+  - name: stg_zones
+    columns:
+      - name: zone_id
+        data_tests: [unique, not_null]
+
+  - name: stg_ride_events
+    columns:
+      - name: ride_id
+        data_tests: [unique, not_null]

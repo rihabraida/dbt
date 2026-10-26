@@ -1,0 +1,38 @@
+# Python virtual environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated dbt artifacts and downloaded packages
+target/
+logs/
+dbt_packages/
+dbt_modules/
+.user.yml
+
+# Local connection profiles and credentials
+profiles.yml
+profiles.yaml
+.dbt/
+.aws/
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local assistant state
+.codex/
+.agents/
+
+# Editor and operating-system temporary files
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

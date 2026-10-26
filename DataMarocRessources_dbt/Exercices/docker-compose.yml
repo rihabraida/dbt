@@ -1,0 +1,19 @@
+services:
+  # An empty warehouse. `dbt seed` loads the raw tables (seeds/*.csv).
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: indrive
+      POSTGRES_PASSWORD: indrive
+      POSTGRES_DB: indrive_warehouse
+    ports:
+      - "5432:5432"
+
+  # dbt docs serve defaults to 8080 -- Adminer uses 8082 so both can run
+  # side by side without a port clash. Same convention as the BIM lab.
+  adminer:
+    image: adminer:4.8.1
+    depends_on:
+      - postgres
+    ports:
+      - "8082:8080"

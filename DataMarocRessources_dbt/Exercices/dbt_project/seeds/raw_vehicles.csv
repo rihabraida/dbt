@@ -1,0 +1,9 @@
+vehicle_id,driver_id,make,model,plate_number,vehicle_type
+1,1,Dacia,Logan,12345-A-6,economy
+2,2,Renault,Clio,23456-A-6,economy
+3,3,Hyundai,Accent,34567-A-6,comfort
+4,4,Dacia,Sandero,45678-A-6,economy
+5,5,Volkswagen,Passat,56789-A-6,comfort
+6,6,Peugeot,208,67890-A-6,economy
+7,7,Toyota,Corolla,78901-A-6,comfort
+8,8,Dacia,Duster,89012-A-6,xl
